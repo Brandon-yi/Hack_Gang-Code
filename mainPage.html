@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Top Nav Bar*/
+.topnav {
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: lightblue;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: center;
+  padding: 6px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  margin-left:-1px;
+  border: none;
+  font-size: 17px;
+}
+    
+.topnav input[type=number] {
+  float: center;
+  padding: 6px;
+  padding-right: 1px;
+  margin-top: 8px;
+  margin-right: 5px;
+  border: none;
+  font-size: 17px;
+}
+    
+ .topnav span{
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/*side navbar*/
+    
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 2px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkgray;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color:black;
+    color:darkgray;
+    border
+}
+    .sidenav .closebtn:hover{
+        color:white;
+    }
+    
+/*Logo which when clicked goes to home page*/
+    #logo{
+        font-size:35px;
+        padding: 10px 10px 10px 8px;
+        margin-right: 40px;
+    }
+    
+/*Login button will bring to login page can maybe change to username when logged in?*/
+    #login{
+        float:right;
+        font-size:20px;
+        color: white;
+        margin-right:20px;
+        margin-top:5px;
+    }
+    
+    #login:hover{
+        background-color:black;
+    }
+    
+    select{
+        padding-top: 8px;
+        padding-bottom: 6px;
+        margin-right: -.2em;
+    }
+
+</style>
+</head>
+<body>
+    
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">My Recipes</a>
+  <a href="#">Liked Recipes</a>
+  <a href="#">Top Recipes</a>
+  <a href="#">Contact</a>
+</div>
+    
+    
+<div class="topnav">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <a class="active" href="#home" id="logo"><b>Food4U</b></a>
+    <select>
+        <option value="recipe">Recipe</option>
+        <option value="ingredient">Ingredient</option>
+        <option value="type">Type</option>
+    </select>
+    <input type="text" placeholder="Search..">
+    <input type="number" placeholder="Max Price">
+    <a href="#login" id="login">Login</a>  
+</div>
+
+    
+<script>
+/*sidenav*/
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    
+
+</script>
+
+</body>
+</html>
