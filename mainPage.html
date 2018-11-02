@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -13,7 +13,7 @@
     }
 </style>
 </head>
-<body>
+<body style="background-color:lightblue">
     
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -24,17 +24,27 @@
 </div>
     
     
-<div class="topnav">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <a class="active" href="#home" id="logo"><b>Food4U</b></a>
-    <select>
-        <option value="recipe">Recipe</option>
-        <option value="ingredient">Ingredient</option>
-        <option value="type">Type</option>
-    </select>
-    <input type="text" placeholder="Search..">
-    <input type="number" placeholder="Max Price">
-    <a href="#login" id="login">Login</a>  
+<div class="row topnav">
+    <div class="col-3">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="active" href="#home" id="logo"><b>Food4U</b></a>
+    </div>
+    <div class="form-group col-1">
+        <select class="form-control" id="homeselect">
+            <option value="recipeselect">Recipe</option>
+            <option value="ingredientselect">Ingredient</option>
+            <option value="typeselect">Type</option>
+        </select>
+    </div>
+    <div class="form-group col-2">
+        <input type="text" class="form-control" id="search" placeholder="Search...">
+    </div>
+    <div class="form-group col-2">
+        <input type="text" class="form-control" id="maxprice" placeholder="Max Price">
+    </div>
+    <div class="col-4">
+        <a href="#login" id="login">Login</a>
+    </div>
 </div>
 
     
