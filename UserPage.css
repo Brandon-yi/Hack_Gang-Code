@@ -18,7 +18,7 @@
 	display: none;
 	background-color: lightcyan;
 	padding: 15px;
-    height: 65.5vh;
+    height: 69vh;
 }
 
 .tab button:hover {
@@ -223,4 +223,9 @@ html, body {
 
 #homeselect {
     margin-top: 8px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
 }
