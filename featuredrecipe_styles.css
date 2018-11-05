@@ -14,7 +14,7 @@ div.gallery {
 }
 
 div.gallery:hover {
-    color: lightblue;
+    color: grey;
 }
 
 div.gallery img {
