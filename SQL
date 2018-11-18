@@ -1,0 +1,9 @@
+create database food4u;
+
+create table if not exists user ( userid serial, username varchar(20) not null, email varchar(255) not null, password varchar(12) not null );
+
+create table if not exists favorites ( recipeid int not null, userid int not null);
+
+create table if not exists recipes ( recipeid serial, recipename varchar(255) not null, userid int not null);
+
+create table if not exists user ( ingredients serial, recipeid int not null, price float not null, quantity int not null, unit int not null);
