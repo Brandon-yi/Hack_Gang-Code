@@ -8,6 +8,7 @@
 	float: left;
 	cursor: pointer;
 	padding: 10px;
+    margin: 0px;
 	border: none;
 	outline: none;
     color:white;
@@ -33,6 +34,10 @@
     border-right: 1px solid black;
     border-top: 1px solid black;
     border-bottom: none;
+}
+
+#selectdiv {
+    padding-top: 15px;
 }
 
 html, body {
