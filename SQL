@@ -1,9 +1,9 @@
 create database food4u;
 
-create table if not exists user ( userid serial, username varchar(20) not null, email varchar(255) not null, password varchar(12) not null );
+create table if not exists user (username varchar(20) not null, email varchar(255) not null, password varchar(12) not null );
 
-create table if not exists favorites ( recipeid int not null, userid int not null);
+Create table if not exists recipe (recipename varchar(255) not null, price double(3,2) not null, link varchar(255) not null, username varchar(255) not null);
 
-create table if not exists recipes ( recipeid serial, recipename varchar(255) not null, userid int not null);
 
-create table if not exists user ( ingredients serial, recipeid int not null, price float not null, quantity int not null, unit int not null);
+
+Select recipe.name, recipe.price, recipe.link from recipe inner join user on recipe.username = user.username where recipe.username = //some variable for username;
