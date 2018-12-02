@@ -7,3 +7,4 @@ Create table if not exists recipe (recipename varchar(255) not null, price doubl
 
 
 Select recipe.name, recipe.price, recipe.link from recipe inner join user on recipe.username = user.username where recipe.username = //some variable for username;
+Select recipe.name, recipe.price, recipe.link from recipe inner join user on recipe.username = user.username where recipe.username = //some variable for username;
