@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 			$_POST["price"] = 'price';
 			$_POST["link"] = 'link';
 			$_POST["user"] = 'user';
-			include_once './add.php';
+			include_once '../Final/add.php';
 			$result = test_input(' test\case ');
 
 			$this->assertEquals('testcase', $result);
